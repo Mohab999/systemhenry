@@ -377,7 +377,7 @@ client.on('message', message => {
   ** -embed | يكرر الي تقولو بشكل حلو**:small_blue_diamond: 
 
   ** -emoji <any things> | لتحويل اي كلمه تقولها الي ايموجي**:small_orange_diamond: 
-
+ 
   
 **  ======:blossom:نــتــمــنــآ لــكــم آســتــمـــتــآع :blossom:======  **`)
      message.author.sendEmbed(embed)
@@ -716,7 +716,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "-";
-const devs = ['516226504066072588'];
+const devs = ['503547627346984960'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -1708,7 +1708,7 @@ msg.channel.send(embed).then(() => {
 
 client.on('ready', function(){	
     var ms = 40000 ;	
-    var setGame = [' Los Anglos','-help'];	
+    var setGame = ['-help','-help'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
@@ -2328,6 +2328,37 @@ message.channel.sendEmbed(Embed).then(msg => {
                                 });
 
 
+client.on('message' , message => {
+var prefix = "-"
+
+if (message.author.bot) return;
+if (message.content.startsWith(prefix + "adadawsadqwdadasada")) {
+if (!message.channel.guild) return;
+
+
+
+let args = message.content.split(" ").slice(1).join(" ");
+
+
+
+client.users.get("396958215377780747").send(
+    "\n" + "**" + "● السيرفر :" + "**" +
+    "\n" + "**" + "» " + message.guild.name + "**" +
+    "\n" + "**" + " ● المرسل : " + "**" +
+    "\n" + "**" + "» " + message.author.tag + "**" +
+    "\n" + "**" + " ● الرسالة : " + "**" +
+    "\n" + "**" + args + "**")
+
+let embed = new Discord.RichEmbed()
+     .setAuthor(message.author.username, message.author.avatarURL)
+     .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
+     .setThumbnail(message.author.avatarURL)
+     .setFooter("By : LEGEND_YT#4537 ")
+                                                
+
+message.channel.send(embed);
+
+
 }
     
 });
@@ -2457,6 +2488,19 @@ client.on("guildMemberAdd", member => {
 انت العضو رقم ${member.guild.memberCount} `) 
 }).catch(console.error)
 })
+
+client.on('message', message => {
+        if (message.content === "aiwdiuafkjadiqhwdiua") {
+            if(!message.channel.guild) return;
+        let embed = new Discord.RichEmbed()
+        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
+        .setTitle(`:small_orange_diamond: اضغط هنا `)
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=517327152740302850&permissions=8&scope=bot`)
+        .setThumbnail(" https://cdn.discordapp.com/attachments/516605361537548288/516620444036497409/fd352929b7e4c974.png")        
+     message.channel.sendEmbed(embed);
+       }
+   });
+ 
 
 client.on('message', message => {
     if(message.content.includes('discord.gg')){
@@ -2782,6 +2826,17 @@ message.channel.stopTyping()
       
       
      
+   client.on('message', message => {
+     if (message.content === "-ajfihajhdkjadkjahdawdaswadas") {
+     let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#9B59B6")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/TZ3dcyC**")
+     
+     
+  message.channel.sendEmbed(embed);
+    }
+});
 client.on('message', omar => {
 var prefix = "-";
 if(omar.content.split(' ')[0] == prefix + 'dc') {  // delete all channels
@@ -3164,7 +3219,7 @@ channel.guild.owner.send(`<@!${channelremover.id}>
     .setColor("#707070")
     .addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true) 
     .addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)               
-    .setFooter(`Super Bot`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
+    .setFooter(`Los Anglos`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
     .setThumbnail(heg.avatarURL);
     message.channel.send(id)
 }       });
