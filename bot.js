@@ -140,7 +140,7 @@ client.on('message', message => {
      const embed = new Discord.RichEmbed() 
          .setThumbnail(message.author.avatarURL)
          .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/bE54fhV :scroll: **`)
+         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:   :scroll: **`)
    message.author.sendEmbed(embed)
    
    }
@@ -151,7 +151,7 @@ client.on('message', message => {
      const embed = new Discord.RichEmbed() 
          .setThumbnail(message.author.avatarURL)
          .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/bE54fhV :scroll: **`)
+         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:   :scroll: **`)
    message.author.sendEmbed(embed)
    
    }
@@ -162,7 +162,7 @@ client.on('message', message => {
      const embed = new Discord.RichEmbed() 
          .setThumbnail(message.author.avatarURL)
          .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/bE54fhV :scroll: **`)
+         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:   :scroll: **`)
    message.author.sendEmbed(embed)
    
    }
@@ -173,7 +173,7 @@ client.on('message', message => {
      const embed = new Discord.RichEmbed() 
          .setThumbnail(message.author.avatarURL)
          .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/bE54fhV :scroll: **`)
+         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:   :scroll: **`)
    message.author.sendEmbed(embed)
    
    }
@@ -184,7 +184,7 @@ client.on('message', message => {
      const embed = new Discord.RichEmbed() 
          .setThumbnail(message.author.avatarURL)
          .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/bE54fhV :scroll: **`)
+         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:   :scroll: **`)
    message.author.sendEmbed(embed)
    
    }
@@ -716,7 +716,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "-";
-const devs = ['503547627346984960'];
+const devs = ['516226504066072588'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
